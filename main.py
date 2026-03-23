@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, request, render_template_string
 import MySQLdb
 from MySQLdb import cursors
