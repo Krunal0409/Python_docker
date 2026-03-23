@@ -1,14 +1,14 @@
 #getting the base image
-From python:3.12
+FROM python:3.12
 
 #creating working directory path to run
-workdir /app
+WORKDIR /app
 
 # copy the code from local to workdir
-copy . .
+COPY . .
 
 #run 
-RUN python main.py
+RUN pip install -r requirements.txt
 
 #pip install -r requirement.txt if needed'
-Entrypoint ["python","main.py"]
+ENTRYPOINT ["python","main.py"]
