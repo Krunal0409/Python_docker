@@ -7,5 +7,8 @@ workdir /app
 # copy the code from local to workdir
 copy . .
 
-#pip install -r requirement.txt if needed
+#run 
+RUN python main.py
+
+#pip install -r requirement.txt if needed'
 Entrypoint ["python","main.py"]
